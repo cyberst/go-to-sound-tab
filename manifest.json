@@ -1,6 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Go to Sound Tab",
+  "author": "cyberst",
   "description": "Takes you to the tab that is generating sound",
   "version": "0.0.1",
   "icons": {
@@ -10,10 +11,8 @@
     "128": "icons/icon128.png"
   },
   "background": {
-    "scripts": [
-      "browser-polyfill.min.js",
-      "background_script.js"
-    ]
+    "persistent": false,
+    "scripts": ["browser-polyfill.min.js", "background_script.js"]
   },
   "browser_action": {
     "default_icon": {
