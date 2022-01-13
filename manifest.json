@@ -3,7 +3,7 @@
   "name": "Go to Sound Tab",
   "author": "cyberst",
   "description": "Takes you to the tab that is generating sound",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",

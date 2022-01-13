@@ -5,7 +5,6 @@ function GoToSoundTab() {
         if(!GoToSoundTabInWindow(currentWindow, true))
         {
             browser.windows.getAll({populate:true}).then(allWindows => {
- 
                 if(!(allWindows.filter(window => window.id !== currentWindow.id)
                 .some(window => GoToSoundTabInWindow(window, false))))
                 {
