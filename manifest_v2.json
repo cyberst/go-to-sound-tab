@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Go to Sound Tab",
   "author": "cyberst",
   "description": "Takes you to the tab that is generating sound",
@@ -11,9 +11,13 @@
     "128": "icons/icon128.png"
   },
   "background": {
-    "service_worker": "background_script.js"
+    "persistent": false,
+    "scripts": [
+      "browser-polyfill.min.js",
+      "background_script.js"
+    ]
   },
-  "action": {
+  "browser_action": {
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
@@ -21,14 +25,5 @@
       "128": "icons/icon128.png"
     },
     "default_title": "Go to Sound Tab"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "strict_min_version": "109.0"
-    }
-  },
-  "permissions": [
-    "tabs",
-    "windows"
-  ]
+  }
 }

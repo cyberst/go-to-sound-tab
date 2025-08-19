@@ -1,1 +1,3 @@
 .vs/
+.DS_Store
+output/*
